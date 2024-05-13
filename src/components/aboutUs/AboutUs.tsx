@@ -7,6 +7,7 @@ const AboutUs = () => {
   const About3 = `Our Coaching & Mentoring Programs are tailored for modern age leaders. Recognizing the multifaceted roles you undertake, our program empowers forward-thinking Business Owners, Founders, or Corporate Executives with insights and skills to lead with clarity, manage with precision, and excel with distinction.`;
   const About4 = `We're a team of dedicated professionals committed to driving Strategic Performance Improvement within your organization. Our creative management consulting firm specializes in enhancing Strategic Focus, People Performance, and Motivation to achieve superior business outcomes. Experience the difference with Walnut Business Consultants, where our collaborative approach ensures a rewarding experience for both our clients and our team."`;
   const About5 = `Whether you're venturing into new markets, revitalizing your brand, or innovating new products and services, our market intelligence provides the foresight necessary to drive sustainable growth and success. `;
+  const About6 = `"Empower your leadership and team to make informed strategic decisions with our actionable insights into the demand landscape.” `;
 
   return (
     <>
@@ -24,6 +25,7 @@ const AboutUs = () => {
           <TextGenerateEffect words={About3} />
           <TextGenerateEffect words={About4} />
           <TextGenerateEffect words={About5} />
+          <TextGenerateEffect words={About6} />
         </div>
       </div>
     </>
