@@ -11,15 +11,19 @@ const AboutUs = () => {
 
   return (
     <>
-      <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-        About <span className="text-[#ffae00]">US</span>
-      </h2>
-      <div className="flex flex-row justify-evenly pb-10">
+      <div className="relative">
+        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#ffae00]"></div>
+        <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
+          About <span className="text-[#ffae00]">US</span>
+        </h2>
+        <div className="absolute right-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-black"></div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-evenly pb-10">
         <div className="p-5 bg-white">
           <ImagesEffect />
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 p-3 text-center">
           <TextGenerateEffect words={About1} />
           <TextGenerateEffect words={About2} />
           <TextGenerateEffect words={About3} />

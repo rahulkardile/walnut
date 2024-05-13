@@ -60,9 +60,13 @@ const OurTeam = () => {
     "Our team of specialists will optimize your resources and propel you toward your business objectives. Let's collaborate to a grow business.";
 return (
     <div>
+          <div className="relative">
+        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#ffae00]"></div>
         <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-            Our <span className="text-[#ffae00]">Team</span>
+          Our <span className="text-[#ffae00]">Team</span>
         </h2>
+        <div className="absolute right-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-black"></div>
+      </div>
 
         <People />
         <div className="px-16 text-center">

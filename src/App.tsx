@@ -2,7 +2,7 @@ import HomePage from "./pages/home/HomePage";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-[#8faefa]">
       <HomePage />
     </div>
   );
