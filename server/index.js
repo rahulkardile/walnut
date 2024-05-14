@@ -18,7 +18,7 @@ try {
     console.log("Database connectivity error!");
 }
 
-app.get("/", (req, res)=> {
+app.get("/", (req, res) => {
     res.status(200).json({
         statusCode: 200,
         message: "Server is Working!"
@@ -27,8 +27,23 @@ app.get("/", (req, res)=> {
 
 app.use("/api/user", User)
 
-app.listen(5000, ()=>{
-    console.log("Server is running . . .");
+app.use((err, req, res, next) => {
+    const status = err.statusCode || 400;
+    let message = err.message || "Internal Server Error"
+
+    if (err.code === 11000) {
+        message = "Already exist!"
+    }
+
+    return res.status(status).json({
+        success: false,
+        statusCode: status,
+        message
+    })
+})
+
+app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT} . . . `);
 })
 
 // authore date title images freture_img author content commentbox category *recent post
