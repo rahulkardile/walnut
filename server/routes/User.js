@@ -3,6 +3,7 @@ import User from "../model/User.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt"
 import { ErrorHandler } from "../utils/ErrorHandler.js";
+import verifyUser from "../utils/VerifyUser.js";
 
 const router = express.Router();
 
@@ -69,5 +70,21 @@ router.post("/get", async (req, res, next) => {
     }
 })
 
+router.get("/verify", verifyUser, async(req, res, next)=>{
+    try {
+        
+        const user = req.user;
+
+        res.status(200).json({
+            success: true,
+            statusCode: 200,
+            message: "User is verified",
+            user
+        })
+        
+    } catch (error) {
+        next(error);
+    }
+})
 
 export default router
