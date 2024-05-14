@@ -48,7 +48,7 @@ router.post("/get", async (req, res, next) => {
         }
 
         const GetUser = await User.findOne({
-            email: email
+            email
         })
 
         if(!GetUser){
