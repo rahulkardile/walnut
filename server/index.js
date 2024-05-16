@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 import cookieParser from "cookie-parser"
 
 import User from "./routes/User.js"
+import Blog from "./routes/Post.js"
 
 const app = express();
 app.use(express.json());
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/user", User)
+app.use("/api/blog",  Blog)
 
 app.use((err, req, res, next) => {
     const status = err.statusCode || 400;
