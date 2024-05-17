@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 import { MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="flex flex-row justify-between p-1 bg-white px-9 items-center">
+    <header className="flex flex-row justify-between p-1 px-9 items-center">
       <img src={logo} alt="logo" className="w-16 h-16" />
 
       <nav className="portrait:hidden sm:hidden lg:block ">
@@ -34,7 +34,7 @@ const Navbar = () => {
             className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
             to={"/"}
           >
-            Segments We Serve
+            Segments we Serve
           </Link>
           <Link
             className="duration-500 ease-in-out tracking-wide text-black font-semibold hover:text-yellow-500"
@@ -46,7 +46,7 @@ const Navbar = () => {
             className="duration-500 ease-in-out text-black font-semibold hover:text-yellow-500"
             to={"/"}
           >
-            Let's Connect
+            Lets Connect
           </Link>
         </div>
       </nav>
