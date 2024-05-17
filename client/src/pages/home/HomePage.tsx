@@ -1,5 +1,4 @@
 import AboutUs from "../../components/aboutUs/AboutUs";
-import Blog from "../../components/blog/Blog";
 import VisionMission from "../../components/cardsVisionMission/VisionMission";
 import Header from "../../components/header/Header";
 import SegmentsWeServe from "../../components/segments/SegmentsWeServe";
@@ -14,8 +13,11 @@ const HomePage = () => {
       <AboutUs />
       <OurTeam />
       <OurServices />
+<<<<<<< HEAD
+=======
       <SegmentsWeServe />
       <Blog />
+>>>>>>> 158594436c5751be26a3d323334c60c809457554
     </div>
   );
 };
