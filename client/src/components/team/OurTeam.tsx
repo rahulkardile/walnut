@@ -51,42 +51,41 @@ const OurTeam = () => {
     //   review:
     //     "Tyler's meticulous approach to quality assurance ensures that our products meet the highest standards. His thorough testing procedures have significantly improved product reliability and user satisfaction.",
     // },
-   
   ];
 
   const teamPara =
     "Expanding your business Pan India, presents immense challenges. WBC , we excel in transforming these challenges into success stories. Our profound grasp of the Indian market, coupled with our extensive range of services, positions us as the perfect partner for your business journey.";
   const teamPara1 =
     "Our team of specialists will optimize your resources and propel you toward your business objectives. Let's collaborate to a grow business.";
-return (
+  return (
     <div>
-          <div className="relative">
-        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
+      <div className="relative">
+        <div className="absolute left-64 top-1/2 w-96 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
         <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
           Our <span className="text-[#4f81ff]">Team</span>
         </h2>
-        <div className="absolute right-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-black"></div>
+        <div className="absolute right-64 top-1/2 w-96 border-[1px] rounded-lg hidden sm:block border-black"></div>
       </div>
 
-        <People />
-        <div className="px-16 text-center">
-            <TextGenerateEffect words={teamPara} />
-            <TextGenerateEffect words={teamPara1} />
-        </div>
+      <People />
+      <div className="px-16 text-center">
+        <TextGenerateEffect words={teamPara} />
+        <TextGenerateEffect words={teamPara1} />
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 m-20">
-            {team.map((team) => (
-                <Team
-                    key={team.id}
-                    imageSrc={team.image}
-                    alt={team.name}
-                    title={team.name}
-                    description={team.review}
-                />
-            ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 m-20">
+        {team.map((team) => (
+          <Team
+            key={team.id}
+            imageSrc={team.image}
+            alt={team.name}
+            title={team.name}
+            description={team.review}
+          />
+        ))}
+      </div>
     </div>
-);
+  );
 };
 
 export default OurTeam;

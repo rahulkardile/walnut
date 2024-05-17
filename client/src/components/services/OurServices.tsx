@@ -38,9 +38,13 @@ const OurServices = () => {
 
   return (
     <>
-      <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-        Our <span className="text-[#4f81ff]">Services</span>
-      </h2>
+  <div className="relative">
+        <div className="absolute left-64 top-1/2 w-80 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
+        <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
+          Our <span className="text-[#4f81ff]">Services</span>
+        </h2>
+        <div className="absolute right-64 top-1/2 w-80 border-[1px] rounded-lg hidden sm:block border-black"></div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
         {/* <div className="h-[40rem] w-full flex items-center justify-center "> */}

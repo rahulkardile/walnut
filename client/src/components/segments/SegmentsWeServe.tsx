@@ -70,10 +70,14 @@ const SegmentsWeServe = () => {
 
   return (
     <>
-      <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-        Segments <span className="text-[#4f81ff]">we serve</span>
-      </h2>
 
+      <div className="relative">
+        <div className="absolute left-64 top-1/2 w-72 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
+        <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
+          Segments <span className="text-[#4f81ff]">we serve</span>
+        </h2>
+        <div className="absolute right-64 top-1/2 w-72 border-[1px] rounded-lg hidden sm:block border-black"></div>
+      </div>
       <div className="mx-16">
         <Swiper
           spaceBetween={50}

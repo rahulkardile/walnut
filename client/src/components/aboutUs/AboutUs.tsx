@@ -12,11 +12,11 @@ const AboutUs = () => {
   return (
     <>
       <div className="relative">
-        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
+        <div className="absolute left-64 top-1/2 w-96 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
         <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
           About <span className="text-[#4f81ff]">US</span>
         </h2>
-        <div className="absolute right-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-black"></div>
+        <div className="absolute right-64 top-1/2 w-96 border-[1px] rounded-lg hidden sm:block border-black"></div>
       </div>
       <div className="flex flex-col md:flex-row justify-evenly pb-10">
         <div className="mt-7">
