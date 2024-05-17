@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-row justify-between p-1 bg-white px-9 items-center">
-      <img src={logo} alt="logo" className="w-28 h-28" />
+      <img src={logo} alt="logo" className="lg:w-28 lg:h-28 w-20 h-20 " />
 
       <nav className="portrait:hidden sm:hidden lg:block ">
         <div className="flex flex-row text-lg items-center gap-4 pr-8">
@@ -72,10 +72,15 @@ const Navbar = () => {
           />
         )}
         <nav
-          className={`bg-white absolute h-[110vh]  z-20 left-0 top-0 w-[70%] sm:[30%] ${
+          className={`bg-white fixed h-full z-50 left-0 top-0 w-[100%] ${
             toggle ? "translate-x-[-110%]" : "translate-x-0"
           } duration-1000 ease-in-out`}
         >
+           <IoCloseSharp
+            className="text-3xl fixed top-7 right-9"
+            onClick={() => setToggle(!toggle)}
+          />
+
           <ul className="flex flex-col gap-6 p-10">
             <Link
               className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
@@ -121,6 +126,7 @@ const Navbar = () => {
               Join Us
             </button>
           </ul>
+          
         </nav>
       </div>
     </header>
