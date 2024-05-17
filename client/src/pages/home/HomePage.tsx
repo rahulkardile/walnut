@@ -15,7 +15,7 @@ const HomePage = () => {
       <OurTeam />
       <OurServices />
       <SegmentsWeServe />
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };

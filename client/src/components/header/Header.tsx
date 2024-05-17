@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { ImagesSlider } from "../../AceternityUI/ui/ImagesSlider";
+
+import imgs1 from "../../assets/imgs .jpg";
+import imgs2 from "../../assets/imgs2.jpg";
+import imgs3 from "../../assets/imgs3.jpg";
+import imgs4 from "../../assets/imgs4.jpg";
 const Header = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  ];
+  const images = [imgs1, imgs2, imgs3, imgs4];
   return (
     <ImagesSlider className="h-[48rem]" images={images}>
       <motion.div
