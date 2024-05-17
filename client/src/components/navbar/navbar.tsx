@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 import { MdOutlineMenu } from "react-icons/md";
@@ -8,32 +7,103 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="flex flex-row justify-between p-3 items-center">
-      <img src={logo} alt="logo" className="w-12 h-12" />
+    <header className="flex flex-row justify-between p-1 px-9 items-center">
+      <img src={logo} alt="logo" className="w-16 h-16" />
 
       <nav className="portrait:hidden sm:hidden lg:block ">
-        <div className="flex flex-row items-center gap-4 pr-8">
-          <Link to={"/"}>descktop</Link>
-          <Link to={"/"}>Home1</Link>
-          <Link to={"/"}>Home1</Link>
-          <Link to={"/"}>Home1</Link>
+        <div className="flex flex-row text-base items-center gap-4 pr-8">
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Home
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            About Us
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Services
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Segments we Serve
+          </Link>
+          <Link
+            className="duration-500 ease-in-out tracking-wide text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Continuous Learning{" "}
+          </Link>
+          <Link
+            className="duration-500 ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Lets Connect
+          </Link>
         </div>
       </nav>
+
+      <button
+        style={{ backgroundColor: "#182137" }}
+        className="p-2  tracking-wide rounded-full px-6 text-white font-semibold hover:scale-105 duration-500"
+      >
+        Join Us
+      </button>
 
       <div className="lg:hidden block">
         <MdOutlineMenu onClick={() => setToggle(!toggle)} className="text-lg" />
 
         <nav
-          className={`bg-white absolute h-[110vh]  z-20 left-0 top-0 w-[50%] sm:[30%] ${
+          className={`bg-white absolute h-[110vh]  z-20 left-0 top-0 w-[70%] sm:[30%] ${
             toggle ? "translate-x-[-110%]" : "translate-x-0"
           } duration-1000 ease-in-out`}
         >
           <ul className="flex flex-col gap-6 p-10">
-            <Link to={"/"}>mobile</Link>
-            <Link to={"/"}>Home1</Link>
-            <Link to={"/"}>Home1</Link>
-            <Link to={"/"}>Home1</Link>
-            <p onClick={() => setToggle(!toggle)}>Close</p>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Home
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            About Us
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Services
+          </Link>
+          <Link
+            className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Segments we Serve
+          </Link>
+          <Link
+            className="duration-500 ease-in-out tracking-wide text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Continuous Learning{" "}
+          </Link>
+          <Link
+            className="duration-500 ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/"}
+          >
+            Lets Connect
+          </Link>
+            <p className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500" onClick={() => setToggle(!toggle)}>Close</p>
           </ul>
         </nav>
       </div>
