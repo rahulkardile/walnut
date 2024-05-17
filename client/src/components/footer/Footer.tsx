@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/Walnut_logo.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
