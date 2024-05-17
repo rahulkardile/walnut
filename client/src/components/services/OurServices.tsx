@@ -38,9 +38,13 @@ const OurServices = () => {
 
   return (
     <>
-      <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-        Our <span className="text-[#ffae00]">Services</span>
-      </h2>
+  <div className="relative">
+        <div className="absolute left-64 top-1/2 w-80 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
+        <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
+          Our <span className="text-[#4f81ff]">Services</span>
+        </h2>
+        <div className="absolute right-64 top-1/2 w-80 border-[1px] rounded-lg hidden sm:block border-black"></div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
         {/* <div className="h-[40rem] w-full flex items-center justify-center "> */}
@@ -70,7 +74,7 @@ const OurServices = () => {
                   </svg>
                 </span>
                 <div className="space-y-6 pt-5 text-center text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                  <span className="text-[#ffae00]">{services.title}</span>
+                  <span className="text-[#4f81ff]">{services.title}</span>
                   <p className="text-base">{services.description}</p>
                 </div>
                 <div className="pt-5 text-base  font-semibold leading-7">
