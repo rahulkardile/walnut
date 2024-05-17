@@ -1,12 +1,10 @@
-// import { Link } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 import { MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
-
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
+    const [toggle, setToggle] = useState(false);
   return (
     <header className="flex flex-row justify-between p-3 items-center">
       <img src={logo} alt="logo" className="w-12 h-12" />
