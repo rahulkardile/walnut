@@ -9,7 +9,9 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-row justify-between p-1 bg-white px-9 items-center">
-      <img src={logo} alt="logo" className="lg:w-28 lg:h-28 w-20 h-20 " />
+      <Link to={"/"}>
+        <img src={logo} alt="logo" className="lg:w-28 lg:h-28 w-20 h-20 " />
+      </Link>
 
       <nav className="portrait:hidden sm:hidden lg:block ">
         <div className="flex flex-row text-lg items-center gap-8  pr-8">
@@ -49,12 +51,16 @@ const Navbar = () => {
           >
             Let's Connect
           </Link>
+          <Link
+            className="duration-500 ease-in-out text-black font-semibold hover:text-yellow-500"
+            to={"/login"}
+          >
+            Login
+          </Link>
         </div>
       </nav>
 
-      <button
-        className="p-2 hidden lg:block tracking-wide bg-buttonColor rounded-full px-6 tex font-semibold text-white bg-blue-950 hover:bg-[#ffae00] duration-500"
-      >
+      <button className="p-2 hidden lg:block tracking-wide bg-buttonColor rounded-full px-6 tex font-semibold text-white bg-blue-950 hover:bg-[#ffae00] duration-500">
         Join Us
       </button>
 
