@@ -12,7 +12,7 @@ const Navbar = () => {
       <img src={logo} alt="logo" className="lg:w-28 lg:h-28 w-20 h-20 " />
 
       <nav className="portrait:hidden sm:hidden lg:block ">
-        <div className="flex flex-row text-lg items-center gap-4 pr-8">
+        <div className="flex flex-row text-lg items-center gap-8  pr-8">
           <Link
             className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
             to={"/"}
@@ -53,8 +53,7 @@ const Navbar = () => {
       </nav>
 
       <button
-        style={{ backgroundColor: "#182137" }}
-        className="p-2 hidden lg:block tracking-wide rounded-full px-6 text-white font-semibold hover:scale-105 duration-500"
+        className="p-2 hidden lg:block tracking-wide bg-buttonColor rounded-full px-6 tex font-semibold text-white bg-blue-950 hover:bg-[#ffae00] duration-500"
       >
         Join Us
       </button>
@@ -76,7 +75,7 @@ const Navbar = () => {
             toggle ? "translate-x-[-110%]" : "translate-x-0"
           } duration-1000 ease-in-out`}
         >
-           <IoCloseSharp
+          <IoCloseSharp
             className="text-3xl fixed top-7 right-9"
             onClick={() => setToggle(!toggle)}
           />
@@ -118,15 +117,14 @@ const Navbar = () => {
             >
               Lets Connect
             </Link>
-            
+
             <button
               style={{ backgroundColor: "#182137" }}
-              className="p-2 tracking-wide rounded-full px-6 w-[150px] text-white font-semibold hover:scale-105 duration-500"
+              className="p-3 tracking-wide rounded-full px-6 w-[150px] text-white font-semibold hover:bg-yellow-500 duration-500"
             >
               Join Us
             </button>
           </ul>
-          
         </nav>
       </div>
     </header>
