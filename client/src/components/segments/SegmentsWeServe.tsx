@@ -5,53 +5,66 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
+
+
+import img1 from "../../assets/swsImg1.jpg";
+import img2 from "../../assets/swsImg2.jpg";
+import img3 from "../../assets/swsImg3.jpg";
+import img4 from "../../assets/swsImg4.jpg";
+import img5 from "../../assets/swsImg5.jpg";
+import img6 from "../../assets/swsImg6.jpg";
+
+
 interface Segment {
   name: string;
   desription: string;
   img: string;
 }
+
+
+
+
+
 const SegmentsWeServe = () => {
   const segments: Segment[] = [
     {
       name: "Finance & Financial Advisory",
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: img1
     },
     {
       name: "Government",
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: img2 
     },
     {
       name: "Hospital & Health Care Services",
 
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: img3
     },
     {
       name: "Pharmaceuticals",
 
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: img4
     },
     {
       name: " Hospitality Industry",
 
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+      img:img5},
     {
       name: "Education industry",
 
       desription:
         "'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+      img: img6},
     {
       name: "Hygiene ",
 
@@ -70,7 +83,6 @@ const SegmentsWeServe = () => {
 
   return (
     <>
-
       <div className="relative">
         <div className="absolute left-64 top-1/2 w-72 border-[1px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
         <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
@@ -80,8 +92,8 @@ const SegmentsWeServe = () => {
       </div>
       <div className="mx-16">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
+          spaceBetween={10}
+          slidesPerView={1}
           loop={true}
           centeredSlides={true}
           autoplay={{
@@ -92,6 +104,20 @@ const SegmentsWeServe = () => {
             clickable: true,
           }}
           navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
           modules={[Autoplay, Pagination, Navigation]}
         >
           {segments.map((data, index) => {
