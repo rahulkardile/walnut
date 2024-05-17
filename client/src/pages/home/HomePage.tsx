@@ -1,5 +1,4 @@
 import AboutUs from "../../components/aboutUs/AboutUs";
-import Blog from "../../components/blog/Blog";
 import VisionMission from "../../components/cardsVisionMission/VisionMission";
 import Header from "../../components/header/Header";
 import SegmentsWeServe from "../../components/segments/SegmentsWeServe";
@@ -15,7 +14,6 @@ const HomePage = () => {
       <OurTeam />
       <OurServices />
       <SegmentsWeServe />
-      {/* <Blog /> */}
     </div>
   );
 };
