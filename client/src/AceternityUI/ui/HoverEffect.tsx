@@ -68,7 +68,7 @@
     return (
       <div
         className={cn(
-          "rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+          "rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-transparent dark:border-white/[0.2] shadow-lg group-hover:border-slate-700 relative z-20",
           className
         )}
       >
@@ -101,7 +101,7 @@
     return (
       <p
         className={cn(
-          "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+          "mt-8 text-zinc-800 tracking-wide leading-relaxed text-sm",
           className
         )}
       >
@@ -119,7 +119,7 @@
     return (
       <div
       className={cn(
-        "flex justify-center items-center mt-8 text-zinc-400 tracking-wide leading-relaxed text-5xl",
+        "flex justify-center items-center mt-8 text-[#4f81ff]  tracking-wide leading-relaxed text-5xl",
         className
       )}
     >

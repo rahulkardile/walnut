@@ -16,6 +16,7 @@ const HomePage = () => {
       <OurServices />
       <SegmentsWeServe />
       <Blog />
+
     </div>
   );
 };
