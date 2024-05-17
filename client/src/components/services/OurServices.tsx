@@ -39,7 +39,7 @@ const OurServices = () => {
   return (
     <>
       <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-        Our <span className="text-[#ffae00]">Services</span>
+        Our <span className="text-[#4f81ff]">Services</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
@@ -70,7 +70,7 @@ const OurServices = () => {
                   </svg>
                 </span>
                 <div className="space-y-6 pt-5 text-center text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                  <span className="text-[#ffae00]">{services.title}</span>
+                  <span className="text-[#4f81ff]">{services.title}</span>
                   <p className="text-base">{services.description}</p>
                 </div>
                 <div className="pt-5 text-base  font-semibold leading-7">

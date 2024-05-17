@@ -4,14 +4,12 @@ import Navbar from "./components/navigation/Navbar";
 
 const App = () => {
   return (
-    <div className="bg-[#8faefa]">
+    <div className="bg-[#eff0f1]">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={""} />
       </Routes>
-
-      <HomePage />
     </div>
   );
 };

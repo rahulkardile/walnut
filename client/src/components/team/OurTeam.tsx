@@ -61,9 +61,9 @@ const OurTeam = () => {
 return (
     <div>
           <div className="relative">
-        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#ffae00]"></div>
+        <div className="absolute left-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-[#4f81ff]"></div>
         <h2 className="my-10 sm:mb-20 text-xl text-center sm:text-5xl  text-black">
-          Our <span className="text-[#ffae00]">Team</span>
+          Our <span className="text-[#4f81ff]">Team</span>
         </h2>
         <div className="absolute right-64 top-1/2 w-96 border-[3px] rounded-lg hidden sm:block border-black"></div>
       </div>
