@@ -23,7 +23,7 @@ const AboutUs = () => {
           <ImagesEffect />
         </div>
 
-        <div className="w-full md:w-1/2 p-3 text-center">
+        <div className="w-full md:w-1/2 px-3 text-center sm:text-left sm:px-0">
           <TextGenerateEffect words={About1} />
           <TextGenerateEffect words={About2} />
           <TextGenerateEffect words={About3} />
