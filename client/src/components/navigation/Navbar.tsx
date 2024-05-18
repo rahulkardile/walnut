@@ -9,6 +9,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-row justify-between p-1 bg-white px-9 items-center">
+       
       <Link to={"/"}>
         <img src={logo} alt="logo" className="lg:w-28 lg:h-28 w-20 h-20 " />
       </Link>
@@ -65,7 +66,7 @@ const Navbar = () => {
       </button>
 
       <div className="lg:hidden block">
-        {toggle ? (
+        {!toggle ? (
           <MdOutlineMenu
             onClick={() => setToggle(!toggle)}
             className="text-3xl"
@@ -78,7 +79,7 @@ const Navbar = () => {
         )}
         <nav
           className={`bg-white fixed h-full z-50 left-0 top-0 w-[100%] ${
-            toggle ? "translate-x-[-110%]" : "translate-x-0"
+            !toggle ? "translate-x-[-110%]" : "translate-x-0"
           } duration-1000 ease-in-out`}
         >
           <IoCloseSharp
@@ -90,42 +91,49 @@ const Navbar = () => {
             <Link
               className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               Home
             </Link>
             <Link
               className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               About Us
             </Link>
             <Link
               className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               Services
             </Link>
             <Link
               className="duration-500 tracking-wide ease-in-out text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               Segments we Serve
             </Link>
             <Link
               className="duration-500 ease-in-out tracking-wide text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               Continuous Learning{" "}
             </Link>
             <Link
               className="duration-500 ease-in-out text-black font-semibold hover:text-yellow-500"
               to={"/"}
+              onClick={() => setToggle(false)}
             >
               Lets Connect
             </Link>
 
             <button
               style={{ backgroundColor: "#182137" }}
+              onClick={() => setToggle(false)}
               className="p-3 tracking-wide rounded-full px-6 w-[150px] text-white font-semibold hover:bg-yellow-500 duration-500"
             >
               Join Us
